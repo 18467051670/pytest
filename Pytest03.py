@@ -43,6 +43,7 @@ class Test03_02(object):
     def test_c(self):
         print('ccc')
         assert 'c' == 'c'
+        print()
 
     @pytest.mark.L3
     def test_d(self):
