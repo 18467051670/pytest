@@ -2,8 +2,8 @@ import pytest
 
 
 class TestStorm(object):
-    def setup_module(self):  # 在整个文件的开始和结束执行一次
-        print('setup_module')
+    def setup_module(self, x=print('setup_module')):  # 在整个文件的开始和结束执行一次
+        x
 
     def teardown_module(self):
         print('teardown_module')
